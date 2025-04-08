@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #041F60;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #166177;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #3DE0D2;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #041F60;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Graph Styling */
+.bar-graph {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.bar {
+    background-color: #3DE0D2;
+    display: inline-block;
+    margin-right: 20px; /* Space between bars */
+    position: relative;
+}
+
+.value-label {
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+}
+
+.x-label {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    margin-right: 20px; /* Space between labels */
+    color: #333;
+}
+
+.y-label {
+    text-align: right;
+    margin: 0 5px;
+    color: #333;
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #041F60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #166177;
+}
+
+/* Chatbot Styling */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #e0e0e0;
+}
+
+.user-message {
+    background-color: #3DE0D2;
+    color: #fff;
+    text-align: right;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - HydroHarvest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="hydro.png" alt="HydroHarvest Logo">
+        </div>
+        <div class="company-name">HydroHarvest</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="energy.html">Energy Generated</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="chatbot">
+            <h2>Chatbot - Energy Conservation Tips</h2>
+            <div class="chat-container">
+                <div class="chat-box">
+                    <div class="chat-message bot-message">
+                        <p>Welcome to the HydroHarvest Chatbot! How can I help you with energy conservation today?</p>
+                    </div>
+                </div>
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HydroHarvest. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('send-btn').addEventListener('click', function() {
+            var input = document.getElementById('chat-input');
+            var message = input.value.trim();
+            if (message) {
+                var chatBox = document.querySelector('.chat-box');
+                var userMessage = document.createElement('div');
+                userMessage.className = 'chat-message user-message';
+                userMessage.innerHTML = `<p>${message}</p>`;
+                chatBox.appendChild(userMessage);
+                
+                // Simple chatbot response
+                var botMessage = document.createElement('div');
+                botMessage.className = 'chat-message bot-message';
+                botMessage.innerHTML = `<p>Here's a tip: Turn off lights when not in use.</p>`;
+                chatBox.appendChild(botMessage);
+                
+                // Clear input field
+                input.value = '';
+                
+                // Scroll to bottom
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>
